@@ -7,5 +7,7 @@ A simple cryptography tool
 * Open the dir
 * paste `python3 Nemesis.py`
 
-# Issue
-It's still not complete as you cant encrypt/decrypt a longer text
+# Result
+
+Encrypted : 3703783483983a83603603481683981383903283403a03781683703081683283101683a03403383483681683c83a0348360308328390168398138328370278
+Decrypted : One's reality might be an other's illusion
