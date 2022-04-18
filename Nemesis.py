@@ -23,7 +23,7 @@ while True:
             else:
                 pass
             for i in cipher:
-                n = ord(i) * 8 + 16
+                n = ord(i) * 8
                 l.append(hex(n))
             for i in l:
                 n = i[::-1].split('x0')
@@ -50,8 +50,6 @@ while True:
                 last = last.replace("-", " ")
 
             print(f"Message : {last}")
-        else:
-            pass
 
         while True:
             try:
