@@ -1,3 +1,5 @@
+from os import system, name
+
 while True:
     try:
         print("""
@@ -21,7 +23,7 @@ while True:
             else:
                 pass
             for i in cipher:
-                n = ord(i) * len(cipher) * 2
+                n = ord(i) * 8 + 16
                 l.append(hex(n))
             for i in l:
                 n = i[::-1].split('x0')
@@ -42,7 +44,7 @@ while True:
                 hexx.append(i[::-1])
 
             for i in hexx:
-                last += chr(int(i, 16) // len(hexx) // 2)
+                last += chr(int(i, 16)// 8)
 
             if "-" in last:
                 last = last.replace("-", " ")
